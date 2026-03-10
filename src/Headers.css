@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    height: 45px;
+}
+header ul {
+    list-style-type: none;
+}
+header ul li {
+    display: inline;
+    margin-right: 20px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
