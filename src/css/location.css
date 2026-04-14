@@ -1,0 +1,23 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 3%;
+    color : #F1FAEE;
+}
+.info-map {
+    display: flex;
+    justify-content: center;
+}
+.info-map p {
+    display: inline-block;
+    max-width: auto;
+    width: 35%;
+    margin: 0 60px;
+    font-size: 1.3em;
+}
+iframe {
+    border-radius: 15px;
+}

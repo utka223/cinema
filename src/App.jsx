@@ -1,15 +1,24 @@
-import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './App.css'
-
-import MovieSwiper from './MovieSwiper.jsx';
+import Layout from './Layout.jsx';
+import MovieSwiper from './pages/MovieSwiper.jsx';
+import Film from './pages/Film.jsx';
+import SearchResultFilms from './pages/SearchResultFilms.jsx';
 
 function App() {
 
   return (
     <>
-      <h1>Top films</h1>
-      <MovieSwiper />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<MovieSwiper />} />
+            <Route path="film/:id" element={<Film />} />
+            <Route path="search/:query" element={<SearchResultFilms />} />
+          </Route>
+        </Routes>
+        </BrowserRouter>
     </>
   )
 }

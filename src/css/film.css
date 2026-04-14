@@ -1,0 +1,47 @@
+.film {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 45px);
+    gap: 50px;
+}
+.info img {
+    width: auto;
+    height: 450px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    color: #F1FAEE;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.info h2 {
+    margin: 0;
+    width: 600px;
+    text-align: start;
+}
+.info p {       
+    max-width: 600px;
+    text-align: start;
+}
+.buy-tick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.buy-tick button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buy-tick button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}

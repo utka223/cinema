@@ -1,0 +1,24 @@
+footer {
+    display: block;
+    margin-top: 40px;
+    color: #F1FAEE;
+    background-color: #151515;
+    padding: 20px;
+    gap: 10px;
+}
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.info-footer div {
+    display: flex;
+    flex-direction: column;
+}
+.links p a {
+    color: #F1FAEE;
+    font-weight: 700;
+    text-decoration: none;
+}
+.links p a:hover {
+    color: #93032E;
+}

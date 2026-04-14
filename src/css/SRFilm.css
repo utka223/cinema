@@ -1,0 +1,30 @@
+button {
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #93032E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-results {
+    padding: 20px;
+}
+.results-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.result-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 210px;
+}
+.result-item span {
+    font-weight: 500;
+    color: #F1FAEE; 
+    margin: 10px 0;
+}
