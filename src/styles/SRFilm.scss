@@ -22,9 +22,10 @@ button {
     flex-direction: column;
     align-items: start;
     width: 210px;
-}
-.result-item span {
-    font-weight: 500;
-    color: #F1FAEE; 
-    margin: 10px 0;
+
+    span {
+      font-weight: 500;
+      color: #F1FAEE; 
+      margin: 10px 0;
+    }
 }

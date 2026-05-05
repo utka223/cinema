@@ -22,13 +22,22 @@ function Header() {
 
     return (
       <header>
-          <div className='logo'><a href="/"><h1>Cinema</h1></a></div>
+          <div className='logo'>
+            <a href="/">
+              <h1>Cinema</h1>
+            </a>
+          </div>
           {/* <span>
               <ul>
                   <li><a href="/">Home</a></li>
               </ul>
           </span> */}
-          <div className='search'><input type="text" placeholder="Search..." value={draft} onChange={handleInputChange} /><button onClick={handleSearch} ><i className="bx bx-search bx-flip-horizontal" /></button></div>
+          <div className='search'>
+            <input type="text" placeholder="Search..." value={draft} onChange={handleInputChange} />
+            <button onClick={handleSearch} >
+              <i className="bx bx-search bx-flip-horizontal" />
+            </button>
+          </div>
       </header>
     );
 }

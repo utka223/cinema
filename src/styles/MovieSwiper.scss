@@ -15,29 +15,38 @@
     height: 600px;
     width: 100%;
     color: #F1FAEE;
+
+    p {
+      font-size: 1.5em;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 400;
+      background-color: #93032E;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: 1px solid #93032E;
+    }
+
+    span {
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+      margin: 10px 0;
+    }
 }
 
-.child p {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin: 10px 0;
-}
 
-.child button {
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: 400;
-    background-color: #93032E;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.child span {
-    display: block;
-    margin-top: 10px;
-    font-size: 18px;
-    margin: 10px 0;
+.info-price {
+  display: flex;
+  bottom: 0;
+  gap: 10px;
 }
 img {
     width: 100%;
@@ -52,6 +61,11 @@ img {
     height: max-content;
     font-size: 3em;
     color: #93032E;
+    transition: 0.4s;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -59,16 +73,17 @@ img {
         width: 100%;
         margin: 20px 0;
     }
-
-    .child h2{
+    .child {
+      h2 {
         width: 100%;
         font-size: 1.2em;
-    }
-    .child span {
+      }
+      span {
         font-size: 20px;
-    }
-    .child button {
+      }
+      button {
         padding: 8px 16px;
         font-size: 16px;
+      }
     }
 }

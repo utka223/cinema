@@ -9,16 +9,30 @@ footer {
 .info-footer {
     display: flex;
     justify-content: space-between;
-}
-.info-footer div {
-    display: flex;
-    flex-direction: column;
+    gap: 4px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      color: #c6c6c8;
+
+      span {
+        font-weight: 600;
+      }
+      p {
+        font-weight: 400;
+      }
+    }
 }
 .links p a {
     color: #F1FAEE;
     font-weight: 700;
     text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+      color: #93032E;
+      font-weight: 900;
+    }
 }
-.links p a:hover {
-    color: #93032E;
-}
+

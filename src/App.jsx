@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import './App.css'
+import './App.scss';
 import Layout from './Layout.jsx';
 import MovieSwiper from './pages/MovieSwiper.jsx';
 import Film from './pages/Film.jsx';

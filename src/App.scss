@@ -47,27 +47,37 @@ header ul li a {
 .search {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid #93032E;
+  border: 1px solid #93032E;
   border-radius: 17px;
   padding: 4px 10px;
-}
-  .search input {
+  transition: 0.4s;
+
+  input {
     border: none;
     padding: 8px;
     outline: none;
     width: 250px;
     background-color: #151515;
     color: #93032E;
-}
-.search button {
-  display: flex;
-  background-color: transparent;
-  align-items: center;
-}
-.search button i {
-  color: #93032E;
-  text-align: center;
-  font-size: 17px;
+  }
+  button {
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    font-size: 20px;
+
+    &:hover i {
+      color: #F1FAEE;
+      transform: translateY(-2px);
+    }
+
+    i {
+      color: #93032E;
+      text-align: center;
+      font-size: 17px;
+      transition: 0.4s;
+    }
+  }
 }
 .logo a {
     color: #93032E;

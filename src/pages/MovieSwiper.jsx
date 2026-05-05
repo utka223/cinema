@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Location from './Location.jsx';
  
-import "../css/MovieSwiper.css";
+import "../styles/MovieSwiper.scss";
 // импорт стилей ОБЯЗАТЕЛЕН
 import "swiper/css";
 import "swiper/css/navigation";
@@ -42,9 +42,9 @@ function MovieSwiper() {
                 <SwiperSlide key={movie.id} className='child'>
                     <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="movie_poster" />
                     <p>{movie.title}</p>
-                    <div>
-                    <span><b>{prices[index]} Kc</b></span>
-                    <button onClick={() => window.open("/film/" + movie.id, "_blank")}>Buy</button>
+                    <div className="info-price">
+                      <button onClick={() => window.open("/film/" + movie.id, "_blank")}>Buy</button>
+                      <span><b>{prices[index]} Kc</b></span>      
                     </div>
                 </SwiperSlide>
                 ))}

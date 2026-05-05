@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useSearchStore } from '../store/searchStore';
 import { useEffect } from 'react';
 
-import '../css/SRFilm.css';
+import '../styles/SRFilm.scss';
 
 function SearchResultFilms() {
     const { setNameFilm, searchResults, nameFilm, setSearchResults } = useSearchStore();

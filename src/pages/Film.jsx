@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams } from "react-router-dom";
 import { getMovies } from '../data/data.jsx';
 
-import "../css/film.css";
+import "../styles/film.scss";
 
 function Film() {
 
@@ -27,7 +27,7 @@ function Film() {
             </div>
             <div className='buy-tick'>
                 {/* <span><b>{movie.price}Kc</b></span> */}
-                <button onClick={handleBuy} disabled={isBought}>{isBought ? "Bought!" : "Buy!"}</button>
+                <div><button onClick={handleBuy} disabled={isBought}>{isBought ? "Bought!" : "Buy!"}</button></div>
             </div>
         </div>
     )
